@@ -46,7 +46,7 @@ class OrderControllerTest {
     MockMvc mockMvc;
 
     @Test
-    @DisplayName("주문 생성 테스트")
+    @DisplayName("주문 생성 ")
     void 주문_등록_테스트() throws Exception {
         //given
         Member member1 = createMember("jung", "서울", "123", "456");
@@ -70,7 +70,7 @@ class OrderControllerTest {
 
 
     @Test
-    @DisplayName("주문 생성 실패 테스트")
+    @DisplayName("주문 생성 실패 ")
     void 주문_등록_실패_테스트() throws Exception {
 
         //given
@@ -90,7 +90,7 @@ class OrderControllerTest {
     }
 
     @Test
-    @DisplayName("주문 취소 테스트")
+    @DisplayName("주문 취소 ")
     void 주문_취소_테스트() throws Exception {
         //given
         // Member 생성
@@ -122,7 +122,7 @@ class OrderControllerTest {
     }
 
     @Test
-    @DisplayName("주문 조건 검색 테스트 - 이름으로 검색")
+    @DisplayName("주문 조건 검색  - 이름으로 검색")
     void 주문_조건_검색_테스트() throws Exception {
         //given
 
@@ -171,7 +171,7 @@ class OrderControllerTest {
 
 
     @Test
-    @DisplayName("주문 조건 검색 테스트 - 주문 상태로 검색")
+    @DisplayName("주문 조건 검색  - 주문 상태로 검색")
     void 주문_조건_검색_테스트_주문_상태() throws Exception {
         //given
 
@@ -208,7 +208,7 @@ class OrderControllerTest {
 
         // 주문 조건 설정
         OrderSearch orderSearch = new OrderSearch();
-        // 주문자 이름 jung
+        // 주문 취소 검색 설정
         orderSearch.setOrderStatus(OrderStatus.CANCEL);
 
         //then

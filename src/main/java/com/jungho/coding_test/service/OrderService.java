@@ -30,6 +30,7 @@ public class OrderService {
      * 주문 생성
      *
      * @param createOrderRequestDto
+     * @return orderId
      */
     public Long createOrder(CreateOrderRequestDto createOrderRequestDto) {
         //  member 엔티티 조회

@@ -50,7 +50,7 @@ class MemberControllerTest {
 
 
     @Test
-    @DisplayName("회원 조회 테스트")
+    @DisplayName("회원 조회 ")
     void findMembers() throws Exception {
         //given
         Member member1 = createMember("jung", "서울", "123", "456");
@@ -68,7 +68,7 @@ class MemberControllerTest {
     }
 
     @Test
-    @DisplayName("회원 등록 테스트")
+    @DisplayName("회원 등록 ")
     void 회원_등록_테스트() throws Exception {
         //given
         CreateMemberRequestDto memberRequestDto = createMemberRequestDto();
@@ -85,7 +85,7 @@ class MemberControllerTest {
     }
 
     @Test
-    @DisplayName("회원 등록 실패 테스트 - 이름을 기입하지 않은 경우")
+    @DisplayName("회원 등록 실패 - 이름을 기입하지 않은 경우")
     void 회원_등록_실패_테스트() throws Exception {
         //given
         CreateMemberRequestDto memberRequestDto = new CreateMemberRequestDto();
