@@ -12,14 +12,15 @@
     - IDE: IntelliJ IDEA Ultimate
     - OS: Window 10
     - GIT
-- Server
-    - Java 11
+- Server && Library
+      - Java 11
     - Spring Boot 2.5.5
     - JPA
     - H2
     - Gradle
     - Junit5
     - QueryDsl
+    - Model Mapper
 
 ## 기능 요구사항
 
