@@ -73,3 +73,12 @@
 
 - 배송 등록은 주문과 배송이 1:1 관계이므로 주문이 생성 될 때 배송이 같이 등록 됨으로 생략한다.
 - 배송 취소는 주문과 배송이 1:1 관계이므로 주문이 취소될때 배송도 같이 취소됨으로 생략한다.
+
+### 빌드할때 queryDsl 오류 발생시 해결책
+
+
+- Gradle -> build -> clean 실행
+- Gradle -> other -> compileQuerydsl 실행
+
+- 인텔리제이 설정 변경
+  - File | Settings | Build, Execution, Deployment | Build Tools | Gradle 설정에서 Build and run using: IntelliJ IDEA 로 변경 
